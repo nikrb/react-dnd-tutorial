@@ -1,8 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import registerServiceWorker from './registerServiceWorker';
+// import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
-registerServiceWorker();
+import Board from './Board';
+// import { observe } from './Game';
+
+
+ReactDOM.render(
+  <Board knightPosition={[7, 4]} />,
+  document.getElementById('root')
+);
+
+// observe(knightPosition =>
+//   ReactDOM.render(
+//     <Board knightPosition={knightPosition} />,
+//     document.getElementById('root')
+//   );
+// );
+// registerServiceWorker();
